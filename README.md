@@ -12,7 +12,8 @@
 Запуск:
 <ol>
     <li>Запустить командную строку в корне папки library-app и написать команду composer install</li>
-    <li>После установки зависимостей composer'ом в командной строке применить команду npm install (или yarn install)</li>
+    <li>После установки зависимостей composer'ом в командной строке применить команду npm install (yarn install)</li>
+    
     <li>Затем в командной строке ввести и применить copy .env.example .env</li>
 
     <li>Запустить командную строку в корне папки library-app и написать команду npm run dev</li>
