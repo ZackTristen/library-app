@@ -12,16 +12,22 @@ function AddNewBook() {
     let year = useRef();
 
     const onSubmitBook = () => {
-      if (title.current.value === "" || year.current.value === "" || selectedAuthors.length === 0 )  {
-       return  alert("Заполните все поля")
-      }
+        if (
+            title.current.value === "" ||
+            year.current.value === "" ||
+            selectedAuthors.length === 0
+        ) {
+            return alert("Заполните все поля");
+        }
         const newBook = {
-            id: String((books.length + 1)*Math.round((Math.random()*10 + Math.random()*10))),
+            id: String(
+                (books.length + 1) *
+                    Math.round(Math.random() * 10 + Math.random() * 10)
+            ),
             title: title.current.value,
             author: selectedAuthors,
             year: year.current.value,
         };
-        // const [style, setStyle] = useState("display: none");
 
         addNewBook(newBook);
     };
@@ -35,7 +41,6 @@ function AddNewBook() {
 
     return (
         <div>
-            {/* <h1 style={{style}}></h1> */}
             <table className="table">
                 <thead>
                     <tr className="text-center">

@@ -1,75 +1,9 @@
 import { makeAutoObservable } from "mobx";
 
 class LibraryStore {
-    books = [
-        // {
-        //   id: "1",
-        //   title: "3body",
-        //   author: ["Tolstoy", "Turgenev"],
-        //   year: "2000",
-        // },
-        // {
-        //   id: "2",
-        //   title: "dune",
-        //   author: ["Turgenev"],
-        //   year: "1989",
-        // },
-        // {
-        //   id: "3",
-        //   title: "master i margarita",
-        //   author: ["bulgakov"],
-        //   year: "1989",
-        // },
-        // {
-        //   id: "4",
-        //   title: "about time",
-        //   author: ["dan simmons", "jhon travel"],
-        //   year: "1989",
-        // },
-        // {
-        //   id: "5",
-        //   title: "stalker",
-        //   author: ["Cialkov", "bulgakov"],
-        //   year: "1989",
-        // },
-        // {
-        //   id: "6",
-        //   title: "star gate",
-        //   author: ["Greg Ozerov", "bulgakov", "Cialkov"],
-        //   year: "1989",
-        // },
-    ];
+    books = [];
 
-    authors = [
-        // {
-        //   id: "1",
-        //   name: "Tolstoy",
-        // },
-        // {
-        //   id: "2",
-        //   name: "Turgenev",
-        // },
-        // {
-        //   id: "3",
-        //   name: "bulgakov",
-        // },
-        // {
-        //   id: "4",
-        //   name: "dan simmons",
-        // },
-        // {
-        //   id: "5",
-        //   name: "jhon travel",
-        // },
-        // {
-        //   id: "6",
-        //   name: "Cialkov",
-        // },
-        // {
-        //   id: "7",
-        //   name: "Greg Ozerov",
-        // },
-    ];
+    authors = [];
     filteredField = "Все авторы";
     filteredBooks = [];
 

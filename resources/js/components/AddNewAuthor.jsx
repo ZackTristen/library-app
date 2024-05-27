@@ -11,7 +11,10 @@ function AddNewAuthor() {
             return alert("Введите ФИО автора");
         }
         const newAuthor = {
-            id: String((authors.length + 1)*Math.round((Math.random()*10 + Math.random()*10))),
+            id: String(
+                (authors.length + 1) *
+                    Math.round(Math.random() * 10 + Math.random() * 10)
+            ),
             name: name.current.value,
         };
         addNewAuthor(newAuthor);
